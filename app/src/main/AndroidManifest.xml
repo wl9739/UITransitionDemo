@@ -16,7 +16,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui_trasition.ImageActivity"/>
+        <activity
+            android:theme="@style/AppTheme.Main"
+            android:name=".ui_trasition.ImageActivity"/>
+        <activity
+            android:theme="@style/AppTheme.Detail"
+            android:name=".ui_trasition.DetailActivity"/>
     </application>
 
 </manifest>

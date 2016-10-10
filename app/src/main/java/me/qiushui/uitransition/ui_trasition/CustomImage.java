@@ -5,18 +5,18 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 /**
- * Created by wanglin on 2016/10/10.
+ * Created by Qiushui on 2016/10/10.
  */
 
 public class CustomImage extends ImageView {
     private int mResId;
 
     public CustomImage(Context context) {
-        super(context, null, 0);
+        this(context, null, 0);
     }
 
     public CustomImage(Context context, AttributeSet attrs) {
-        super(context, attrs, 0);
+        this(context, attrs, 0);
     }
 
     public CustomImage(Context context, AttributeSet attrs, int defStyleAttr) {

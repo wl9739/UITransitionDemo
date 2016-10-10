@@ -4,4 +4,10 @@
     <style name="AppTheme.Main">
         <item name="android:windowExitTransition">@transition/main_exit</item>
     </style>
+
+    <style name="AppTheme.Detail">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowEnterTransition">@transition/detail_enter</item>
+    </style>
 </resources>

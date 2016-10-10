@@ -8,28 +8,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         android:id="@+id/imageView1"
         style="@style/ImageViewStyle"
         android:src="@drawable/anim1"/>
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         style="@style/ImageViewStyle"
         android:src="@drawable/anim2"/>
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         style="@style/ImageViewStyle"
         android:src="@drawable/anim3"/>
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         style="@style/ImageViewStyle"
         android:src="@drawable/anim4"/>
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         style="@style/ImageViewStyle"
         android:src="@drawable/anim5"/>
 
-    <ImageView
+    <me.qiushui.uitransition.ui_trasition.CustomImage
         style="@style/ImageViewStyle"
         android:src="@drawable/anim6"/>
 </android.support.v7.widget.GridLayout>

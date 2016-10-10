@@ -21,7 +21,10 @@ public class ImageActivity extends AppCompatActivity {
     public void imageClick(View view) {
         ActivityOptions options =
                 ActivityOptions.makeSceneTransitionAnimation(this, view, getString(R.string.image_transition_name));
+
+        CustomImage image = (CustomImage) view;
         Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_IMAGE, image.getImageId());
         startActivity(intent, options.toBundle());
     }
 
