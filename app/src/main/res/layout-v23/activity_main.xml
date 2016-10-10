@@ -12,6 +12,7 @@
     tools:context="me.qiushui.uitransition.MainActivity">
 
     <Button
+        android:id="@+id/ui_transition_btn"
         style="@android:style/Widget.Material.Button.Colored"
         android:text="@string/ui_transition_demo"
         android:layout_width="match_parent"

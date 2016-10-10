@@ -10,56 +10,26 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim1"/>
 
     <ImageView
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim2"/>
 
     <ImageView
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim3"/>
 
     <ImageView
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim4"/>
 
     <ImageView
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim5"/>
 
     <ImageView
-        app:layout_rowWeight="1"
-        app:layout_columnWeight="1"
-        android:id="@+id/imageView6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/ImageViewStyle"
         android:src="@drawable/anim6"/>
 </android.support.v7.widget.GridLayout>
