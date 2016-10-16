@@ -1,7 +1,6 @@
 package me.qiushui.uitransition.manual_transition;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -11,7 +10,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
-import android.util.DisplayMetrics;
 import android.view.Display;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -20,7 +18,7 @@ import me.qiushui.uitransition.R;
 import me.qiushui.uitransition.ui_trasition.DetailActivity;
 
 /**
- * Created by wanglin on 2016/10/13.
+ * Created by Qiushui on 2016/10/13.
  */
 
 public class AnimeDetailActivity extends AppCompatActivity {
@@ -43,34 +41,6 @@ public class AnimeDetailActivity extends AppCompatActivity {
     public static int dpToPx(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
-    }
-
-    /**
-     * This method converts dp unit to equivalent pixels, depending on device density.
-     *
-     * @param dp      A value in dp (density independent pixels) unit. Which we need to convert into pixels
-     * @param context Context to get resources and device specific display metrics
-     * @return A float value to represent px equivalent to dp depending on device density
-     */
-    public static float convertDpToPixel(float dp, Context context) {
-        Resources resources = context.getResources();
-        DisplayMetrics metrics = resources.getDisplayMetrics();
-        float px = dp * ((float) metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
-        return px;
-    }
-
-    /**
-     * This method converts device specific pixels to density independent pixels.
-     *
-     * @param px      A value in px (pixels) unit. Which we need to convert into db
-     * @param context Context to get resources and device specific display metrics
-     * @return A float value to represent dp equivalent to px value
-     */
-    public static float convertPixelsToDp(float px, Context context) {
-        Resources resources = context.getResources();
-        DisplayMetrics metrics = resources.getDisplayMetrics();
-        float dp = px / ((float) metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
-        return dp;
     }
 
     @Override
@@ -110,13 +80,21 @@ public class AnimeDetailActivity extends AppCompatActivity {
         runEnterAnim();
     }
 
+    /**
+     * 计算图片缩放比例
+     *
+     * @param bitmap
+     */
     private void getScale(Bitmap bitmap) {
         if (bitmap.getWidth() > bitmap.getHeight()) {
             mScaleBundle.putFloat(SCALE_WIDTH, (float) screenWidth / (float) dpToPx(this, 120));
-            mScaleBundle.putFloat(SCALE_HEIGHT, (float)bitmap.getHeight() / (float)dpToPx(this, 120));
+            mScaleBundle.putFloat(SCALE_HEIGHT, (float) bitmap.getHeight() / (float) dpToPx(this, 120));
         }
     }
 
+    /**
+     * 模拟入场动画
+     */
     private void runEnterAnim() {
         mImageView.animate()
                   .setDuration(1000)
@@ -129,11 +107,9 @@ public class AnimeDetailActivity extends AppCompatActivity {
 
     }
 
-    private void prepareScence() {
-
-
-    }
-
+    /**
+     * 获取屏幕尺寸
+     */
     private void getScreenSize() {
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -142,11 +118,12 @@ public class AnimeDetailActivity extends AppCompatActivity {
         screenHeight = size.y;
     }
 
+    /**
+     * 获取状态栏高度
+     *
+     * @return
+     */
     private int getStatusBarHeight() {
-        /**
-         * 获取状态栏高度——方法1
-         * */
-        int statusBarHeight1 = -1;
         //获取status_bar_height资源的ID
         int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
         if (resourceId > 0) {

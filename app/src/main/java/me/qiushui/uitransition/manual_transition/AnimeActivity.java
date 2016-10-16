@@ -12,7 +12,7 @@ import me.qiushui.uitransition.R;
 import me.qiushui.uitransition.ui_trasition.CustomImage;
 
 /**
- * Created by wanglin on 2016/10/11.
+ * Created by Qiushui on 2016/10/11.
  */
 
 public class AnimeActivity extends AppCompatActivity {
