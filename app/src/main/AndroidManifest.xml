@@ -22,6 +22,9 @@
         <activity
             android:theme="@style/AppTheme.Detail"
             android:name=".ui_trasition.DetailActivity"/>
+
+        <activity android:name=".manual_transition.AnimeActivity"/>
+        <activity android:name=".manual_transition.AnimeDetailActivity"/>
     </application>
 
 </manifest>

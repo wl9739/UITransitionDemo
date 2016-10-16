@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_horizontal_margin"
-                android:text="@string/detail_text"
+                android:text="@string/detailText"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
         </android.support.v7.widget.CardView>
     </android.support.v4.widget.NestedScrollView>
