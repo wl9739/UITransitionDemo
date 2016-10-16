@@ -1,4 +1,4 @@
-package me.qiushui.uitransition.ui_trasition;
+package me.qiushui.uitransition;
 
 import android.content.Context;
 import android.util.AttributeSet;

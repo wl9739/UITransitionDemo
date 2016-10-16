@@ -2,7 +2,6 @@
 <resources>
 
     <style name="AppTheme.Main">
-
         <item name="android:windowExitTransition">@transition/main_exit</item>
     </style>
 

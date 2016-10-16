@@ -58,6 +58,9 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 自定义的一个监听器。
+     */
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     class CustomTransitionListener implements Transition.TransitionListener, Animator.AnimatorListener {
 

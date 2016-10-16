@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import me.qiushui.uitransition.CustomImage;
 import me.qiushui.uitransition.R;
 
 /**
@@ -32,5 +34,6 @@ public class ImageActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_img);
+        setSupportActionBar((Toolbar) findViewById(R.id.activity_img_toolbar));
     }
 }

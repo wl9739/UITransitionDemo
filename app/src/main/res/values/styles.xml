@@ -10,7 +10,6 @@
 
     <style name="AppTheme.Main">
         <item name="windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
     </style>
 
     <style name="AppTheme.AnimeDetail">

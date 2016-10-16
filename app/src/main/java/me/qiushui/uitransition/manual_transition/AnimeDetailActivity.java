@@ -25,7 +25,7 @@ import me.qiushui.uitransition.ui_trasition.DetailActivity;
 public class AnimeDetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_IMAGE = DetailActivity.class.getSimpleName() + ".IMAGE";
-    public static final int DURATION = 500;
+    public static final int DURATION = 300;
     private static final AccelerateDecelerateInterpolator DEFAULT_INTERPOLATOR = new AccelerateDecelerateInterpolator();
     private static final String SCALE_WIDTH = "SCALE_WIDTH";
     private static final String SCALE_HEIGHT = "SCALE_HEIGHT";

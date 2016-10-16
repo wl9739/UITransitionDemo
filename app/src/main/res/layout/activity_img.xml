@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.GridLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:columnCount="2"
-    app:rowCount="3"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_img_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"/>
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        android:id="@+id/imageView1"
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim1"/>
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="3">
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim2"/>
+        <me.qiushui.uitransition.CustomImage
+            android:id="@+id/imageView1"
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim1"/>
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim3"/>
+        <me.qiushui.uitransition.CustomImage
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim2"/>
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim4"/>
+        <me.qiushui.uitransition.CustomImage
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim3"/>
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim5"/>
+        <me.qiushui.uitransition.CustomImage
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim4"/>
 
-    <me.qiushui.uitransition.ui_trasition.CustomImage
-        style="@style/ImageViewStyle"
-        android:src="@drawable/anim6"/>
-</android.support.v7.widget.GridLayout>
+        <me.qiushui.uitransition.CustomImage
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim5"/>
+
+        <me.qiushui.uitransition.CustomImage
+            style="@style/ImageViewStyle"
+            android:src="@drawable/anim6"/>
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>
