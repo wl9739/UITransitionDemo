@@ -17,14 +17,16 @@
         </activity>
 
         <activity
-            android:theme="@style/AppTheme.Main"
-            android:name=".ui_trasition.ImageActivity"/>
+            android:name=".ui_trasition.ImageActivity"
+            android:theme="@style/AppTheme.Main"/>
         <activity
-            android:theme="@style/AppTheme.Detail"
-            android:name=".ui_trasition.DetailActivity"/>
+            android:name=".ui_trasition.DetailActivity"
+            android:theme="@style/AppTheme.Detail"/>
 
         <activity android:name=".manual_transition.AnimeActivity"/>
-        <activity android:name=".manual_transition.AnimeDetailActivity"/>
+        <activity
+            android:name=".manual_transition.AnimeDetailActivity"
+            android:theme="@style/AppTheme.AnimeDetail"/>
     </application>
 
 </manifest>

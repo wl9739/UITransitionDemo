@@ -1,6 +1,7 @@
 package me.qiushui.uitransition;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         mAutoTransitionBtn = (Button) findViewById(R.id.ui_transition_btn);
         mManualTransitionBtn = (Button) findViewById(R.id.manual_transition_btn);
 
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {
+            mAutoTransitionBtn.setVisibility(View.GONE);
+        }
         mAutoTransitionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

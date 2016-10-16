@@ -9,6 +9,7 @@
     <ImageView
         android:id="@+id/activity_anime_detail_img"
         android:scaleType="centerCrop"
-        android:layout_width="120dp"
-        android:layout_height="120dp"/>
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </FrameLayout>
